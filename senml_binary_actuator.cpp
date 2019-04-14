@@ -40,7 +40,7 @@
         return ((6 * inputLen) / 8) - numEq;
     }
 #else
-    #include <Base64.h>
+    #include <lib/arduino-base64/Base64.h>
 #endif
 
 void SenMLBinaryActuator::actuate(const void* value, int dataLength, SenMLDataType dataType)
